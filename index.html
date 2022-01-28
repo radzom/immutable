@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Immutability</h1>
+					<p>
+						<small>by <a href="http://hakim.se">Gunnar Radzom</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Equations</h2>
+					<p class="fragment">Mathematics<code class="fragment hljs" data-trim data-line-numbers>y = x + 1</code></p>
+					<p class="fragment">Programming<code class="fragment hljs" data-trim data-line-numbers>x = x + 1</code></p>				
+
+					<aside class="notes">
+						<ul>
+							<li>Declarative</li>
+							<li>Imperative</li>
+							<li>Reuse place</li>
+							<li>Memory was expensive</li>
+							<li>C64 had 64KB</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Programming ?</h2>
+					<p class="fragment fade-in-then-semi-out">PLOP Place Oriented Programming</p>
+					<p class="fragment fade-in-then-out">Space Oriented Programming</p>
+
+					<aside class="notes">
+						<ul>
+							<li>New never fails</li>
+							<li>S3 never runs full</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Data ?</h2>
+					<p class="fragment fade-in-then-semi-out">Variables</p>
+					<p class="fragment fade-in-then-out">Values</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Name implies variation</li>
+							<li>Values are facts</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>File Storage ?</h2>
+					<p class="fragment fade-in-then-semi-out">Filesystem</p>
+					<p class="fragment fade-in-then-out">Source Control</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Would you go back? Of cause not.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Databases ?</h2>
+					<p class="fragment fade-in-then-semi-out">SQL, Mongo, ...</p>
+					<p class="fragment fade-in-then-out">Datomic, ...</p>
+
+					<aside class="notes">
+						<ul>
+							<li>They all have an update</li>
+							<li>PLOP</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Strings ?</h2>
+					<p class="fragment fade-in-then-semi-out">C, C++, ...</p>
+					<p class="fragment fade-in-then-out">JavaScript, Java, ...</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Would you go back? Of cause not.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Distributed Systems ?</h2>
+					<p class="fragment fade-in-then-semi-out">CORBA, Java RMI, ...</p>
+					<p class="fragment fade-in-then-out">Rest APIs, MessageBus, Queues, ...</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Failed Technologies.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Advantages in Programming</h2>
+					<p class="fragment fade-in-then-semi-out">Easier to reason about code</p>
+					<p class="fragment fade-in-then-semi-out">No cloning</p>
+					<p class="fragment fade-in-then-semi-out">No defensive copying</p>
+					<p class="fragment fade-in-then-semi-out">No need for synchronization</span>
+					<p class="fragment fade-in-then-semi-out">Helps to build loosly coupled systems</span>
+
+					<aside class="notes">
+						<ul>
+							<li>Failed Systems CORBA, Java RMI</li>
+							<li>Just message passing</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>But what about ... ?</h2>
+				</section>
+
+				<section>
+					<h2>Memory consumption</h2>
+					<p class="fragment fade-in-then-semi-out">Memory is cheap</p>
+					<p class="fragment fade-in-then-semi-out">Garbage Collector</p>
+					<p class="fragment fade-in-then-semi-out">Space Age</p>
+				</section>
+
+				<section>
+					<h2>Performance</h2>
+					<p class="fragment fade-in-then-semi-out">Persistent Data Structure</p>
+					<p class="fragment fade-in-then-semi-out">HAMT Hashed Array Map Tries</p>
+					<p class="fragment fade-in-then-semi-out">Usually not an issue</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Premature optimization</li>
+							<li>Realtime Systems (Trading, Graphis)</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>It feels Unhandy, Uneasy</h2>
+					<p class="fragment fade-in-then-semi-out">Use Programming Language with support for immutability.</p>
+					<p class="fragment fade-in-then-semi-out">Use Functional Lenses</p>
+					<p class="fragment fade-in-then-semi-out">Make mutations explizit.</p>
+					<p class="fragment fade-in-then-semi-out">Try it. The rewards will be great.</p>
+				</section>
+				
+				<section>
+					<h2>THANK YOU</h2>
+					<p>Time for questions.</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
